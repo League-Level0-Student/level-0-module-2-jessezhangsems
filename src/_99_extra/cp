@@ -1,0 +1,25 @@
+Random ran= new Random();
+		
+		int num1 =ran.nextInt(1000);
+
+	int num2=ran.nextInt(900);
+
+int num3=num1+num2;
+int num4=num2-num1;
+
+
+
+
+
+
+String input=JOptionPane.showInputDialog("How many cups of flour do you have?");
+int num=Integer.parseInt(input);
+if(num>2){
+JOptionPane.showMessageDialog(null,"Go buy some more flour.");
+}
+else if(num2<2){
+String input=JOptionPane.showInputDialog("How many people are you going to give cookies to?");
+}
+if(num3>=30){
+String input=JOptionPane.showInputDialog(null,"You are going to need to bake two batches of cookies! You are lucky to have so many friends.");
+}
