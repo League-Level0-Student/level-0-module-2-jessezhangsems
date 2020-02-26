@@ -11,16 +11,25 @@ public class SoundtrackToLife {
 	public static void main(String[] args) {
 
 		// 1. Adjust this pop-up to find out what mood the user is in.
-		int userMood = JOptionPane.showOptionDialog(null, "The question", "Pop-up Title", 0,
-				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Mood1", "Mood2", "Mood3" }, null);
-		
+		int userMood = JOptionPane.showOptionDialog(null, "What mood are you in?", "Pop-up Title", 0,
+				JOptionPane.INFORMATION_MESSAGE, null, new String[] {  "I'm happy because I am a proud anti-vaxxer.", "I'm sad because of anti-vaxxers","I'm angry because of anti-vaxxers","I'm stressed because of anti-vaxxers" }, null);
+		if (userMood==0) {
+			playVideo("https://www.youtube.com/watch?v=nDjz5qHIzsc");
+			playVideo("https://www.youtube.com/watch?v=b03U6BYF9L0");
+			
+		}
 		// 2. Their answer is stored in the userMood variable. Print it out.
-
-		// 3. If they are in a stressed mood, use the playVideo method to play a calming song from YouTube.
-		
-
-		
-		// 4. Play different songs for other moods.
+if(userMood==1) {
+	playVideo("https://www.youtube.com/watch?v=JxJsai5nkGI");
+}
+if(userMood==2) {
+	playVideo("https://www.youtube.com/watch?v=BoGHOYom1sc");
+}
+if (userMood==3) {
+	playVideo("https://www.youtube.com/watch?v=X5lxDzK9sRA");
+	
+}
+	
 
 /**
 * If you can’t think of any, here are some you can use...
